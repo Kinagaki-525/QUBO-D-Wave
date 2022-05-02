@@ -102,3 +102,4 @@ for i in range(N):
 print("distance:"+str(dista)+"km")
 print(result)
 print("Vertical:ctiy, Horizontal:order")
+print("Visit the city when 1")
