@@ -98,8 +98,20 @@ for i in range(N):
 b=np.sum(result,axis=0)
 for i in range(N):
     dista+=((b[i]-1)**2)*lam
-        
+
+answer=np.array([["city     ","1st","2nd","3rd","4th","5th"],
+                 ["Aichi    ","0","0","0","0","0"],
+                 ["Tokyo    ","0","0","0","0","0"],
+                 ["Osaka    ","0","0","0","0","0"],
+                 ["Kanazawa ","0","0","0","0","0"],
+                 ["Matsumoto","0","0","0","0","0"]])
+for i in range(N):
+    for j in range(N):
+        answer[i+1][j+1]=" "+str(result[i][j])+" "
+
+
+
 print("distance:"+str(dista)+"km")
-print(result)
+print(answer)
 print("Vertical:ctiy, Horizontal:order")
 print("Visit the city when 1")
